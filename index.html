@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Saloon Zeek</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width =device-width,intial-
+        scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+    <body>
+        <section id="banner">
+            <img src="images/logo.png" class="Logo">
+            <div class="banner-text">
+                <h1>Hair studio</h1>
+                <p>Style your hair </p> 
+                <div class="banner-btn">
+                    <a href="#"><span></span>find out</a>
+                    <a href="#"><span></span>Read more</a>
+                </div>
+            </div>
+        </section>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                 <li><a href="#">home</a></li>
+                 <li><a href="#">features</a></li>
+                 <li><a href="#">services</a></li>
+                 <li><a href="#">Contact us</a></li>                   
+                </ul>
+            </nav>
+        </div> 
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+        </div> 
+
+       <!--features--> 
+      
+        <section id="features";>
+            <div class="title-text">
+                <p>features</p>
+                <h1>Why choose us</h1>
+            </div>
+        </section>
+        
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var  menu  = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right =="-250px"){
+                    sideNav.style.right = "0";
+                    menu.src = "images/close.png";
+                }
+                else{
+                    sideNav.style.right = "-250";
+                    menu.src = "images/menu.png";
+               }
+            }
+        </script>
+        
+
+
+    </body>
+</html>
